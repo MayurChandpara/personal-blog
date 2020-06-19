@@ -1,0 +1,22 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.blue{
+    background-color: #1da1f2;
+}
+
+.grey{
+    background-color: #a3aaaf;
+}
+
+.lightblue{
+    background-color: #add8e6;
+}
+
+.colorsbox{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,6 @@
+/* This CSS file contains the other files to form main final css */
+
+/* Importing stylesheets */
+@import url("style-home.css");
+@import url("style-post.css");
+@import url("style-design.css");

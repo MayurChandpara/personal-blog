@@ -1,0 +1,137 @@
+/* Default type style */
+body {
+    padding: 0;
+    margin:0;
+    font: 16px 'Roboto', Helvetica, sans-serif;
+}
+
+/* Setting grid layout for home-page */
+.container-home {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Dividing navbar space into two parts */
+.navbar{
+    background-color: #1da1f2;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Making the logo text link */
+.logo {
+    margin: 10px;
+}
+
+.logo-text{
+    font-size: 1.8em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Spacing the menu in the top bar with flexbox */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Pretifying the menu links */
+.menu-link{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-link:hover{
+    color: #000;
+}
+
+
+/* Adjusting main content for the cards to display */
+.main{
+    padding: 10px;
+    margin: 1.2em;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Giving the card look */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 0.6em;
+    margin: 0.6em;
+    border-radius: 0.2em;
+    align-items: center;
+}
+
+/* Card images to be in limits */
+.card img {
+    width: 100%;
+}
+
+/* Making Buttons */
+
+.btn-fill{
+    background-color: #1da1f2;
+    color:#fff;
+    border-radius: 0.3em;
+    border: none;
+    padding: 0.5em;
+    box-shadow: #a3aaaf 0.1em 0.1em;
+}
+
+.btn-fill:hover{
+    background-color: #fff;
+    color:#1da1f2;
+    cursor: pointer;
+}
+
+.btn-no-fill{
+    background-color: #ffffff;
+    color:#1da1f2;
+    border-radius: 0.3em;
+    border: 0.1em solid #1da1f2;
+    padding: 0.5em;
+    box-shadow: #a3aaaf 0.1em 0.1em;
+}
+
+.btn-no-fill:hover{
+    background-color: #1da1f2;
+    color:#fff;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+    background-color: #1da1f9;;
+}
+
+.footer-text{
+    font-size: 0.7em;
+    color: #fff;
+    text-align: right;
+}
+
+@media(min-width:600px){
+    .logo{
+        margin: 0;
+    }
+
+    .navbar{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        align-items: center;
+    }
+
+    .posts {
+        flex-direction: row;
+    }
+}

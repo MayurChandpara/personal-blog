@@ -1,0 +1,133 @@
+
+
+/* Setting grid layout for post-page */
+.container-post {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Making header */
+.header{
+    background-image: url('../img/bg3.jpg');
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+/* Title and Subtitle */
+.title-text{
+    color: #fff;
+    font-size: 2em;
+}
+
+.subtitle-text{
+    margin-top: 0;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.article{
+    margin: 15px;
+}
+
+.article p::first-letter{
+    font-size: 1.5em;
+}
+
+.article h3 {
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #5491ec;
+    padding: 15px;
+}
+
+.info{
+    list-style-type: none;
+    color: #fff;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.subscribe {
+    padding: 15px;
+}
+
+.subscribe form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+input[type=text],
+input[type=email]{
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+    background-color: #ffffff;
+    color:#1da1f2;
+    border-radius: 0.3em;
+    border: 0.1em solid #1da1f2;
+    padding: 0.5em;
+    box-shadow: #a3aaaf 0.1em 0.1em;
+}
+
+.red{
+    color: red;
+}
+
+@media(min-width:600px){
+    .container-post{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "nv nv nv nv"
+        "hd hd hd hd"
+        "ar ar ar sb"
+        "ft ft ft ft";
+    }
+
+    .container-post .navbar{
+        grid-area: nv;
+    }
+
+    .header{
+        grid-area: hd;
+    }
+
+    .article{
+        grid-area: ar;
+    }
+
+    .sidebar{
+        grid-area: sb;
+    }
+
+    .container-post .footer{
+        grid-area: ft;
+    }
+
+    .about{
+        background-color: #fff;
+        flex-direction: column;
+    }
+
+    .info{
+        color: #000;
+        text-align: center;
+    }
+}
